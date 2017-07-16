@@ -1,0 +1,43 @@
+.btn
+	border 0
+	text-decoration none
+	background-color transparent
+	display inline-block
+	vertical-align middle
+	cursor pointer
+	position relative
+	outline 0
+	user-select none
+	text-align center
+	transition .3s ease all
+	white-space nowrap
+	&.view-primary
+		color #fff
+		font-family $f-bold
+		background $c-primary
+		font-size $f-base-size
+		padding 14px 51px
+	&.view-arrow
+		svg
+			transition .3s ease all
+		div
+			padding-top 8px
+	&.view-full
+		width 100%
+	&.view-disabled
+		background-color #9E9E9E
+		cursor not-allowed
+
+	@media $768M
+		&.view-primary
+		&.view-arrow
+			font-size 14px
+
+	@media $1000
+		&.view-primary
+			&:hover
+				background-color $c-primary-light
+		&.view-arrow
+			&:hover
+				svg
+					transform translate(0, 5px)

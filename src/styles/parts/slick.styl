@@ -1,0 +1,51 @@
+.slick
+	&-arrow
+		absolute top 50%
+		z-index 50
+		font-size 0
+		background url(../images/circlearrow.svg) center center no-repeat
+		border none
+		outline 0
+		border none
+		size 72px 76px
+		&.slick-prev
+			left 0
+			transform rotate(180deg)
+		&.slick-next
+			right 0
+	&-slide
+		outline 0
+	&-dots
+		reset-ul()
+		text-align center
+		absolute right left bottom -35px
+		li
+			font-size 0
+			display inline-block
+			vertical-align top
+			margin 0 3px
+			size 10px
+			background-color $c-primary-light
+			border-radius 50%
+			transition .3s ease all
+			button
+				display none
+			&.slick-active
+				background-color $c-secondary
+
+	@media $768
+		&-dots
+			bottom -40px
+			li
+				size 14px
+				margin 0 5px
+
+	@media $1000
+		&-arrow
+			margin-top -38px
+			&.slick-prev
+				left 30px
+			&.slick-next
+				right 30px
+			&:hover
+				transform scale(1.1)

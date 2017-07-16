@@ -1,0 +1,51 @@
+.footer
+	background url(../images/bg2.jpg) center center no-repeat
+	background-size cover
+	background-color #2D2220
+	padding 75px 0
+	color #fff
+	overflow hidden
+	&-text
+		font-size 16px
+		line-height 1.5
+		font-family $f-thin
+		margin-top 30px
+		p
+			margin 0
+	&-partners
+		margin-top 50px
+		img
+			margin-right 40px
+	&-social
+		color #fff
+		margin 50px 0
+		a
+			text-decoration none
+			display inline-block
+			vertical-align middle
+			margin 0 10px
+	&-copy
+		font-size 16px
+		font-family $f-thin
+		line-height 1.5
+	&-feed
+		margin-top 50px
+
+	@media $1000M
+		text-align center
+		&-partners
+			img
+				display inline-block
+				vertical-align top
+				margin 10px 20px
+
+	@media $1000
+		&-partners
+		&-copy
+			white-space nowrap
+		&-social
+			a
+				margin-right 30px
+				transition .3s ease all
+				&:hover
+					transform scale(1.1)

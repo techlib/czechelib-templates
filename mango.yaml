@@ -1,0 +1,40 @@
+src_folder: src
+dist_folder: dist
+styles:
+  - src/styles/index.styl
+  - src/styles/oldie.styl
+  - src/styles/print.styl
+  - src/styles/bootstrap/index.styl
+scripts:
+  - src/scripts/index.es6
+  #- src/serviceWorker.es6
+images:
+  - src/images/**/*
+  - src/dummy/**/*
+sprites:
+  -
+    path: src/images/sources/*.svg
+    name: false
+static:
+  - src/fonts/**
+  - src/libs/**
+  - node_modules/lt-ie-9/lt-ie-9.min.js
+  - node_modules/jquery/dist/jquery.min.js
+  # - src/data/manifest.json
+templates:
+  - src/templates/*.jade
+buildstamp:
+  - dist/styles/*.css
+  - dist/styles/bootstrap/index.styl
+  - dist/scripts/index.js
+dependencies:
+  - lt-ie-9
+  - normalize-scss
+  - jquery
+data:
+  # manifest: src/data/manifest.json
+hooks:
+  init: mango install
+browsersync:
+	open: false
+version: ">=0.30"

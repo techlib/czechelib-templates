@@ -1,0 +1,25 @@
+.photofeedbox
+	&-header
+		margin-bottom 50px
+	&-list
+		font-size 0
+	&-item
+		display inline-block
+		vertical-align top
+		width (100% / 2)
+
+	@media $600
+		&-item
+			width (100% / 4)
+
+	@media $1000
+		&-item
+			width (100% / 5)
+			&:last-child
+				display none
+
+	@media $1200
+		&-item
+			width (100% / 8)
+			&:last-child
+				display inline-block

@@ -1,0 +1,51 @@
+.articlesbox
+	margin 50px 0
+	&-item
+		margin-bottom 50px
+		position relative
+		clearfix()
+		&-img
+			//
+		&-main
+			font-size 15px
+			font-family $f-thin
+			color $c-text-dark
+			line-height 1.5
+			p
+				margin 0
+
+	@media $1000M
+		&-item
+			&-img
+				margin-bottom 20px
+
+	@media $768-1000
+		&-item
+			max-width 500px
+			margin-left auto
+			margin-right auto
+
+	@media $1000
+		margin 100px 0
+		&-item
+			margin-bottom 90px
+			&-main
+				font-size 20px
+				absolute top 50%
+				transform translate(0, -50%)
+			&:nth-child(even)
+				.articlesbox-item
+					&-img
+						float left
+					&-main
+						padding-left 479px + 50px
+
+			&:nth-child(odd)
+				.articlesbox-item
+					&-img
+						float right
+					&-main
+						padding-right 479px + 50px
+
+			&:last-child()
+				margin-bottom 0

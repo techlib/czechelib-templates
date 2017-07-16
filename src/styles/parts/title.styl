@@ -1,0 +1,38 @@
+.title
+	margin 0
+	padding 0
+	line-height 1.1
+	font-weight normal
+	position relative
+	&.view-header
+		font-family $f-bold
+		font-size 45px
+	&.view-subheader
+		font-size 27px
+		font-family $f-thin
+	&.view-section
+		font-family $f-bold
+		font-size 27px
+		svg
+			display block
+			margin 0 auto 20px
+			color $c-secondary
+	&.view-block
+		font-size 18px
+		font-family $f-bold
+		&.view-offset
+			margin-top 30px
+	&.view-white
+		color #fff
+
+	@media $768
+		&.view-header
+			font-size 60px
+		&.view-subheader
+			font-size 36px
+		&.view-section
+			font-size 36px
+		&.view-block
+			font-size 24px
+			&.view-offset
+				margin-top 60px

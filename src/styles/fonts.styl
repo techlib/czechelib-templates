@@ -1,0 +1,13 @@
+font-url(file)
+  return '../fonts/' + file
+
+webfont(family, file)
+  @font-face
+    font-family family
+    src url(font-url(file + '.woff')) format('woff'),
+        url(font-url(file + '.woff2')) format('woff2')
+
+// Webfonts import
+webfont('Museo300', 'Museo300-Regular-webfont')
+webfont('Museo500', 'Museo500-Regular-webfont')
+webfont('Museo700', 'Museo700-Regular-webfont')

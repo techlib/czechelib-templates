@@ -1,0 +1,53 @@
+include ../mixins/shape
+
+block vars
+- var site = { title:'Podskalák', description: 'Letní tábor a oddíl plný her a zábavy!' }
+
+doctype html
+html(lang=cs)
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		meta(name='viewport', content='width=device-width,initial-scale=1')
+
+		title= site.title + ' | ' + site.description
+
+		meta(name='description', content=site.description)
+
+		//- meta(property='og:url', content='http://jaf34.com')
+		//- meta(property='og:title', content='JAF34')
+		//- meta(property='og:description', content='Visual and musical daydreamer who is in love with old good BAUHAUS graphic design school with touch of future.')
+		//- meta(property='og:image', content='http://jaf34.com/images/icons/fbshare.jpg')
+
+		link(rel='shortcut icon', href='images/favicon.png', type='image/png', sizes='16x16')
+		link(rel='shortcut icon', href='images/favicon-32x32.png', type='image/png', sizes='32x32')
+
+		link(rel='stylesheet', href='styles/#{buildstamp}index.css', media='screen')
+		link(rel='stylesheet', href='styles/bootstrap/#{buildstamp}index.css', media='screen')
+
+		<!--[if lt IE 9]>
+		link(rel='stylesheet', href='styles/#{buildstamp}oldie.css', media='screen')
+		script(src='node_modules/lt-ie-9/lt-ie-9.min.js')
+		<![endif]-->
+
+		// Queue of JS components to initialize
+		script.
+			initComponents = [
+				{ name: 'shapes', data: { url: './sprites/shapes.svg' } }
+			]
+
+			function runAnimation(timeout){
+				setTimeout(function(){
+					document.documentElement.className += ' js run-animation';
+				}, timeout)
+			}
+
+			runAnimation(400)
+
+		//- Application init
+		script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js', defer)
+		script(src='libs/slick.min.js', defer)
+		script(src='scripts/#{buildstamp}index.js', defer)
+
+	body
+		block content
