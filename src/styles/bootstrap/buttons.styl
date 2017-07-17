@@ -20,6 +20,13 @@
   button-size($padding-base-vertical, $padding-base-horizontal, $font-size-large, $line-height-base, $btn-border-radius-base)
   user-select none
 
+  svg
+  	margin-left 10px
+
+  &.svg-left
+  	svg
+  		margin-left 0
+
   &,
   &:active,
   &.active
@@ -84,8 +91,16 @@
 // Make a button look and behave like a link
 .btn-link
   color $link-color
+  font-family $font-medium
   font-weight normal
   border-radius 0
+  font-size 20px
+  padding 0
+  &.btn-brand
+  	color $brand-primary
+
+  svg
+  	margin-right 20px
 
   &,
   &:active,
@@ -121,6 +136,8 @@
 .btn-lg
   // line-height ensure even-numbered height of button next to large input
   button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $btn-border-radius-large)
+  padding-top 12px
+  padding-bottom 8px
 
 .btn-sm
   // line-height ensure proper height of button next to small input
