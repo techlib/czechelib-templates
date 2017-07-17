@@ -7,6 +7,7 @@ styles:
   - src/styles/bootstrap/index.styl
 scripts:
   - src/scripts/index.es6
+  - src/scripts/bootstrap/bootstrap-sprockets.js
   #- src/serviceWorker.es6
 images:
   - src/images/**/*
@@ -27,6 +28,7 @@ buildstamp:
   - dist/styles/*.css
   - dist/styles/bootstrap/index.styl
   - dist/scripts/index.js
+  - src/scripts/bootstrap/bootstrap-sprockets.js
 dependencies:
   - lt-ie-9
   - normalize-scss

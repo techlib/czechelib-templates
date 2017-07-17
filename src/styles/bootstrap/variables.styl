@@ -144,9 +144,9 @@ $table-border-color ?=           #ddd
 
 $btn-font-weight ?=              normal
 
-$btn-default-color ?=            #333
-$btn-default-bg ?=               #fff
-$btn-default-border ?=           #ccc
+$btn-default-color ?=            #fff
+$btn-default-bg ?=               #EA4641
+$btn-default-border ?=           #EA4641
 
 $btn-primary-color ?=            #fff
 $btn-primary-bg ?=               $brand-primary
@@ -181,14 +181,14 @@ $btn-border-radius-small ?=      $border-radius-small
 //##
 
 //** `<input>` background color
-$input-bg ?=                     #fff
+$input-bg ?=                     #454545
 //** `<input disabled>` background color
 $input-bg-disabled ?=            $gray-lighter
 
 //** Text color for `<input>`s
-$input-color ?=                  $gray
+$input-color ?=                  #fff
 //** `<input>` border color
-$input-border ?=                 #ccc
+$input-border ?=                 #454545
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -347,7 +347,7 @@ $container-desktop ?=          (940px + $grid-gutter-width)
 $container-md ?=               $container-desktop
 
 // Large screen / wide desktop
-$container-large-desktop ?=    (1140px + $grid-gutter-width)
+$container-large-desktop ?=    (1030px + $grid-gutter-width)
 //** For `$screen-lg-min` and up.
 $container-lg ?=               $container-large-desktop
 
@@ -357,15 +357,15 @@ $container-lg ?=               $container-large-desktop
 //##
 
 // Basics of a navbar
-$navbar-height ?=                  50px
-$navbar-margin-bottom ?=           $line-height-computed
-$navbar-border-radius ?=           $border-radius-base
+$navbar-height ?=                  96px
+$navbar-margin-bottom ?=           0
+$navbar-border-radius ?=           0
 $navbar-padding-horizontal ?=      floor($grid-gutter-width / 2)
 $navbar-padding-vertical ?=        (($navbar-height - $line-height-computed) / 2)
 $navbar-collapse-max-height ?=     340px
 
 $navbar-default-color ?=           #777
-$navbar-default-bg ?=              #f8f8f8
+$navbar-default-bg ?=              #2F2F2F
 $navbar-default-border ?=          darken($navbar-default-bg, 6.5)
 
 // Navbar links
@@ -390,12 +390,12 @@ $navbar-default-toggle-border-color ?=     #ddd
 
 //=== Inverted navbar
 // Reset inverted navbar basics
-$navbar-inverse-color ?=                    lighten($gray-light, 15)
-$navbar-inverse-bg ?=                       #222
+$navbar-inverse-color ?=                    #fff
+$navbar-inverse-bg ?=                       #212121
 $navbar-inverse-border ?=                   darken($navbar-inverse-bg, 10)
 
 // Inverted navbar links
-$navbar-inverse-link-color ?=               lighten($gray-light, 15)
+$navbar-inverse-link-color ?=               #fff
 $navbar-inverse-link-hover-color ?=         #fff
 $navbar-inverse-link-hover-bg ?=            transparent
 $navbar-inverse-link-active-color ?=        $navbar-inverse-link-hover-color
