@@ -10,8 +10,6 @@
 	color $jumbotron-color
 	background-color $jumbotron-bg
 	position relative
-	.well-linksbar
-		absolute left right bottom
 	&-bg
 		background url(../../dummy/header-bg.jpg) center center no-repeat
 		background-size cover
@@ -42,6 +40,9 @@
 	@media screen and (min-width $screen-sm-min)
 		padding-top ($jumbotron-padding * 1.6)
 		padding-bottom ($jumbotron-padding * 1.6)
+
+		.well-linksbar
+			absolute left right bottom
 
 		&-header
 			padding-top ($jumbotron-padding * 4)
