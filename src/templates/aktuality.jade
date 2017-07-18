@@ -1,0 +1,57 @@
+extends layouts/default
+
+block content
+	include sections/sticky
+	.well.well-primary
+		.container
+			h1.title.view-section Aktuality
+	.main
+		.container
+			ol.breadcrumb
+				li
+					a(href='#') Úvod
+				li
+					span Aktuality
+
+	.main
+		.container
+
+			.well
+				.selectbox
+					p Zobrazit:
+					.select
+						.select-caret
+							.caret
+						select.form-control
+							option Všechny aktuality
+							option Všechny aktuality
+							option Všechny aktuality
+							option Všechny aktuality
+
+			.articles
+				ul.media-list
+					li.media.articles-item
+						.media-left
+							a(href='#')
+								img.media-object(src='dummy/article_s.jpg', alt='')
+						.media-body
+							h3.media-heading.articles-heading Mnozí pád se noc jako nešťastná jih povlak
+							.articles-item-desc
+								p Záchvatu myslitelnými z přehazoval jazykem tříkilometrové pokroucených k speciálním převést propracovanou, bouře vedený letní zaznamenáno sledování.
+									a.btn.btn-text(href="#") celý článek
+										+shape('btn-arrow')
+
+
+			.section-btns.text-center
+				a.btn.btn-default.btn-lg
+					| Další aktuality
+					+shape('icon-arrow').view-down
+
+	include sections/footernav
+	include sections/footer
+
+
+
+
+
+
