@@ -118,12 +118,11 @@
 			margin-left 2px
 
 		// Active state
-		&.active > a
-			&,
-			&:hover,
-			&:focus
-				color $nav-pills-active-link-hover-color
-				background-color $nav-pills-active-link-hover-bg
+		&.active
+			background-color $brand-primary
+			a
+				color #fff
+				border-bottom 1px solid $brand-primary
 
 
 // Stacked pills
