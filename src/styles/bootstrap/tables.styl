@@ -70,6 +70,27 @@ th
         padding $table-condensed-cell-padding
 
 
+.table-primary
+	> tbody > tr
+		> th
+			background-color $gray-darker
+			color #fff
+			border none
+			white-space nowrap
+			padding 20px
+		> td
+			background-color $gray-lighter
+			vertical-align middle
+			text-align center
+			padding 20px
+			border-bottom 2px solid #fff
+			color $gray-light
+			&:first-child
+				text-align left
+			&:last-child
+				text-align right
+
+
 // Bordered version
 //
 // Add borders all around the table and between all the columns.

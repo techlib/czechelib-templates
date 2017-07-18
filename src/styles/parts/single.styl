@@ -1,0 +1,19 @@
+.single
+	&-content
+		img
+			margin 30px 0
+			max-width 100%
+		ul,
+		ol
+			margin-top 0
+			padding-left 0
+			list-style none
+			li
+				position relative
+				padding-left 15px
+				&:before
+					content ''
+					size(7px, 7px)
+					background-color $c-primary
+					border-radius 50%
+					absolute left top 9px
