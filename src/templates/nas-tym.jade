@@ -1,0 +1,87 @@
+extends layouts/default
+
+block content
+	include sections/sticky
+	.well.well-primary
+		.container
+			h1.title.view-section Náš tým
+
+	.main
+		.container
+			.row
+				.col-md-9
+					ol.breadcrumb
+						li
+							a(href='#') Úvod
+						li
+							a(href='#') O CzechElib
+						li
+							span Náš tým
+
+					.main
+						.single
+							p V říjnu 2016 se uskutečnilo úspěšné výběrové řízení na Hlavního manažera projektu. Naproti tomu výběrové řízení na ředitele CzechELib doposud nepřineslo vhodného kandidáta. Proto byla na doporučení Projektového dohledu provisorně rolí ředitelky pověřena Ing. Eva Dibuszová, Ph.D.
+
+					.team
+						.team-group
+							h3 Řídicí výbor
+							.team-list
+								+team-item('1','Robert Plaga', 'předseda / MŠMT')
+								+team-item('2','Michal Pospíšil', 'místopředseda / RVŠ, ČKR')
+								+team-item('3','Martin Lhoták', 'AV ČR')
+								+team-item('1','Robert Plaga', 'předseda / MŠMT')
+								+team-item('2','Michal Pospíšil', 'místopředseda / RVŠ, ČKR')
+
+						.team-group
+							h3 Projektový dohled
+							.team-list
+								+team-item('1','Robert Plaga', 'předseda / MŠMT')
+								+team-item('2','Michal Pospíšil', 'místopředseda / RVŠ, ČKR')
+								+team-item('3','Martin Lhoták', 'AV ČR')
+
+						.team-group
+							h3 Vedoucí pracovníci projektu
+							.team-list
+								+team-item('1','Robert Plaga', 'předseda / MŠMT')
+								+team-item('2','Michal Pospíšil', 'místopředseda / RVŠ, ČKR')
+								+team-item('3','Martin Lhoták', 'AV ČR')
+								+team-item('1','Robert Plaga', 'předseda / MŠMT')
+								+team-item('2','Michal Pospíšil', 'místopředseda / RVŠ, ČKR')
+
+					.main.view-offset-bottom
+						.media.media-link
+							.media-left.media-middle
+								+shape('icon-man')
+							.media-body.media-middle
+								h4.media-heading
+									a(href="#") Bývalé pracovní skupiny pro přípravu projektu
+
+				.col-md-3
+					.single-sidebar
+						h2.title.view-section O CzechElib
+						ul.nav.nav-pills.nav-stacked
+							li
+								a(href='#') O projektu
+							li
+								a(href="#") Harmonogram
+							li
+								a(href="#") Naše služby
+							li
+								a(href="#") Cesta k Open Access
+							li
+								a(href="#") Dokumenty
+							li.active
+								a(href="#") Náš tým
+							li
+								a(href="#") Volná místa
+							li
+								a(href="#") Pro média
+
+	include sections/footernav
+	include sections/footer
+
+
+
+
+
+
