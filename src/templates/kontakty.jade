@@ -1,0 +1,66 @@
+extends layouts/default
+
+block content
+	include sections/sticky
+	.well.well-primary
+		.container
+			h1.title.view-section Kontakty
+
+	.main
+		.container
+			ol.breadcrumb
+				li
+					a(href='#') Úvod
+				li
+					span Kontakty
+	.main.view-offset-bottom
+		.container
+			.row
+				.col-md-6
+					p <b>NTK/CzechELib</b><br>Technická 2710/6<br>160 80 Praha 6 - Dejvice<br>Česká republika
+					p
+						b Tel.:
+						| +420 232 002 535
+						br
+						b E-mail:
+						a(href="mailto:info@czechelib.cz") info@czechelib.cz
+						br
+						| Identifikátor datové schránky: syd69w9
+					p
+						b Kontakt pro vydavatele:
+						a(href="mailto:licensing@czechelib.cz") licensing@czechelib.cz
+
+				.col-md-6
+					img(src="dummy/contact-img.jpg", alt="")
+
+	.main.view-bg.view-offset
+		.container
+			h3 Další dotazy:
+			article.media.profile
+				.media-left.media-middle
+					img.img-circle(src="dummy/profile-img.jpg", alt="")
+				.media-body.media-middle
+					p
+						b Radka Spiesová
+						| / manažer komunikace
+						br
+						b Tel.:
+						| +420 721 300 336
+						br
+						b E-mail:
+						a(href="mailto:radka.spiesova@czechelib.cz") radka.spiesova@czechelib.cz
+
+
+	.main.map-wrapper
+		.map-overlay(onclick="style.display='none'", title='Kliknutím mapu aktivujete')
+		iframe.map(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5118.115393432839!2d14.386320469011967!3d50.10392702005248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e8b61a7d13%3A0x917af83b84a0902!2zTsOhcm9kbsOtIHRlY2huaWNrw6Ega25paG92bmE!5e0!3m2!1scs!2scz!4v1500419518514', width='800', height='600', frameborder='0', style='border:0', allowfullscreen='')
+
+
+	include sections/footernav
+	include sections/footer
+
+
+
+
+
+
