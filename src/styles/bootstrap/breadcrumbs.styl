@@ -17,6 +17,10 @@
     a
     	color $brand-primary
     	text-decoration underline
+    	transition .3s ease all
+
+    	&:hover
+    		color #000
 
     + li:before
       content "" + $breadcrumb-separator + "\00a0" // Unicode space added since inline-block means non-collapsing white-space

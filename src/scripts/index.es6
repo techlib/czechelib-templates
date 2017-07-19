@@ -37,7 +37,7 @@ initComponents = {
 //
 // import './modules/activeSticky'
 import './modules/smoothScroll'
-// import './modules/animate'
+import './modules/animate'
 // import './modules/toggleMenu'
 // import './modules/nav'
 // import './modules/toggleMenuLang'
