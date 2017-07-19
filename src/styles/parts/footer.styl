@@ -16,6 +16,7 @@
 			color $c-text-light
 		a
 			text-decoration underline
+			transition .3s ease all
 	&-right
 		padding-top 20px
 		p
@@ -35,3 +36,8 @@
 		table
 			td
 				padding-right 20px
+
+	@media $1000
+		&-nav
+			a:hover
+				color #000

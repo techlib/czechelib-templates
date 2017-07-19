@@ -19,6 +19,7 @@
 	white-space nowrap
 	button-size($padding-base-vertical, $padding-base-horizontal, $font-size-large, $line-height-base, $btn-border-radius-base)
 	user-select none
+	transition .3s ease all
 
 	svg
 		margin-left 10px
@@ -100,8 +101,16 @@
 	margin 0 5px
 	text-decoration underline
 	relative bottom 1px
+	svg
+		transition .3s ease all
+		position relative
+		bottom 1px
+
 	&.btn-brand
 		color $brand-primary
+	&:hover
+		svg
+			transform translate(5px, 0)
 
 // Link buttons
 // -------------------------
@@ -120,8 +129,10 @@
 
 	svg
 		margin-right 8px
+		transition .3s ease all
 		@media (min-width $screen-md-min)
 			margin-right 15px
+			relative bottom 2px
 
 	&,
 	&:active,
@@ -139,9 +150,9 @@
 
 	&:hover,
 	&:focus
-		color $link-hover-color
-		text-decoration $link-hover-decoration
 		background-color transparent
+		svg
+			transform translate(5px, 0)
 
 	&[disabled],
 	fieldset[disabled] &
