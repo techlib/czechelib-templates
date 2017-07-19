@@ -66,8 +66,6 @@
 	margin 50px 0
 // Give the tabs something to sit on
 .nav-tabs
-	border-right 2px solid $gray
-
 	> li
 		float left
 		position relative
@@ -75,8 +73,6 @@
 		// Actual tabs (as links)
 		> a
 			line-height $line-height-base
-			border 2px solid $gray-light
-			border-right 0
 			border-radius 0
 			color $gray-light
 			padding-top 20px
@@ -109,6 +105,18 @@
 					@media (max-width $screen-sm-min)
 						display none
 
+	@media (max-width $screen-sm-min)
+		> li
+			> a
+				border 2px solid #000
+
+	@media (min-width $screen-sm-min)
+		border-right 2px solid $gray
+		> li
+			> a
+				border 2px solid $gray-light
+				border-right 0
+				white-space nowrap
 
 // Pills
 // -------------------------
