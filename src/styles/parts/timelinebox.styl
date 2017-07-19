@@ -3,7 +3,6 @@
 		margin 50px auto 0
 		max-width 800px
 		position relative
-		overflow hidden
 		&:before
 			content ''
 			absolute left 50% top 15px bottom
@@ -25,24 +24,41 @@
 			color #ffbcb8
 			font-size 15px
 			font-family $f-medium
-		&:nth-child(odd)
-			float left
-			clear right
-			text-align right
-		&:nth-child(even)
-			float right
-			clear left
+
+	@media $768M
+		&-list
+			padding-left 20px
 			&:before
+				left 0
+				top 0
+		&-item
+			&:before
+				left -30px
+				top 3px
+				transform translate(0, 0)
+
+	@media $768
+		&-list
+			overflow hidden
+		&-item
+			&:nth-child(odd)
+				float left
+				clear right
+				text-align right
+			&:nth-child(even)
+				float right
+				clear left
+				&:before
+					left auto
+					right 100%
+					transform translate(-19px, 10px)
+			&:last-child
+				margin-bottom 0
+				&:after
+					content ''
+					background-color $c-primary
+					absolute left -40px top 30px bottom
+					width 20px
+			&:last-child:nth-child(odd):after
 				left auto
-				right 100%
-				transform translate(-19px, 10px)
-		&:last-child
-			margin-bottom 0
-			&:after
-				content ''
-				background-color $c-primary
-				absolute left -40px top 30px bottom
-				width 20px
-		&:last-child:nth-child(odd):after
-			left auto
-			right -50px
+				right -50px

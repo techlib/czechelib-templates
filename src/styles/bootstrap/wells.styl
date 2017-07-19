@@ -41,6 +41,21 @@
 		background-color rgba($brand-primary, .8)
 		border none
 		margin 0
+		padding 15px 0
+		text-align center
+		.col-md-4
+			position relative
+			&:after
+				content ''
+				absolute right top -25px bottom -25px
+				width 2px
+				background-color #fff
+				opacity .2
+				border-left 1px solid rgba(#000, .8)
+			&:last-child:after
+				display none
+		@media (min-width $screen-sm-min)
+			padding 25px 0
 		&-btn
 			font-size 18px
 			font-weight 300

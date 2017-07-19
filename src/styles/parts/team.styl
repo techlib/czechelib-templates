@@ -6,10 +6,6 @@
 		font-size 0
 	&-item
 		position relative
-		display inline-block
-		vertical-align top
-		width calc((100%/3) - 20px)
-		margin-right 20px
 		margin-bottom 40px
 		font-size 15px
 		&-img
@@ -40,3 +36,10 @@
 					opacity 1
 				&:before
 					opacity .6
+
+	@media $768
+		&-item
+			display inline-block
+			vertical-align top
+			width calc((100%/3) - 20px)
+			margin-right 20px

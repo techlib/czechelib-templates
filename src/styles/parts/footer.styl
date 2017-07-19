@@ -17,7 +17,18 @@
 		a
 			text-decoration underline
 	&-right
-		text-align right
-		padding-top 50px
+		padding-top 20px
 		p
 			margin 10px 0
+
+	@media $768M
+		text-align center
+		table
+			td
+				display block
+				padding 10px 0
+
+	@media $768
+		&-right
+			text-align right
+			padding-top 50px

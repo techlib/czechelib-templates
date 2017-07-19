@@ -12,6 +12,7 @@
 
 .media-body
   width 10000px
+  max-width 100%
   p
   	margin 0
 
@@ -55,6 +56,19 @@
   list-style none
 
 .media-link
+	a
+		color $brand-primary
 	.media-heading
 		font-weight normal
 		text-decoration underline
+
+@media (max-width $screen-sm-min)
+	.media-left
+		img
+			width 100%
+			.profile &
+			.media &
+				width auto
+	.media-left, .media-right, .media-body
+		display block
+		padding-right 0

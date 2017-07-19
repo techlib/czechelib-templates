@@ -10,9 +10,13 @@
 	color $jumbotron-color
 	background-color $jumbotron-bg
 	position relative
+
 	&-bg
 		background url(../../dummy/header-bg.jpg) center center no-repeat
 		background-size cover
+		padding-bottom 0
+		@media (min-width $screen-sm-min)
+			padding-bottom 40px
 
 	h1,
 	.h1
