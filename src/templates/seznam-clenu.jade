@@ -29,6 +29,23 @@ block content
 					li
 						a(href='#') Government/Others
 
+			.well
+				.filterbox.view-letternav
+					.row
+						.col-md-1
+							p Filtr:
+						.col-md-11
+							ul.letternav
+								li
+									span a
+								li.letternav-separator
+									span |
+								each val in ['b', 'c', 'd', 'e', 'f', 'g', 'h', 'c', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+									li
+										a(href="#")= val
+									li.letternav-separator
+										span |
+
 
 
 
