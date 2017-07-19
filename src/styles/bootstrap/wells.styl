@@ -28,6 +28,9 @@
 		background-color rgba(#000, .6)
 		color #fff
 		border none
+		@media (max-width $screen-sm-min)
+			h2
+				font-size 27px
 	&-auto
 		display inline-block
 		max-width 500px
@@ -38,12 +41,12 @@
 		padding 50px 0 25px
 
 	&-linksbar
-		background-color rgba($brand-primary, .8)
+		background-color rgba($brand-primary, .95)
 		border none
 		margin 0
 		padding 15px 0
 		text-align center
-		.col-md-4
+		.col-sm-4
 			position relative
 			&:after
 				content ''
@@ -54,8 +57,13 @@
 				border-left 1px solid rgba(#000, .8)
 			&:last-child:after
 				display none
+		@media (max-width $screen-sm-min)
+			.col-sm-4
+				padding-top 5px
+				padding-bottom 5px
 		@media (min-width $screen-sm-min)
 			padding 25px 0
+			background-color rgba($brand-primary, .8)
 		&-btn
 			font-size 18px
 			font-weight 300

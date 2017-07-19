@@ -111,13 +111,17 @@
 	color $link-color
 	font-weight normal
 	border-radius 0
-	font-size 20px
+	font-size 16px
 	padding 0
+	@media (min-width $screen-md-min)
+		font-size 20px
 	&.btn-brand
 		color $brand-primary
 
 	svg
-		margin-right 20px
+		margin-right 8px
+		@media (min-width $screen-md-min)
+			margin-right 15px
 
 	&,
 	&:active,

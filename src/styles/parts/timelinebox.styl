@@ -1,4 +1,6 @@
 .timelinebox
+	.container
+		width 98%
 	&-list
 		margin 50px auto 0
 		max-width 800px
@@ -37,28 +39,46 @@
 				top 3px
 				transform translate(0, 0)
 
+	@media $768-1000
+		&-list
+			max-width 723px
+		&-item
+			max-width 311px
+
 	@media $768
 		&-list
 			overflow hidden
 		&-item
+			width 50%
 			&:nth-child(odd)
 				float left
 				clear right
 				text-align right
+				&:before
+					transform translate(40px, 10px)
 			&:nth-child(even)
 				float right
 				clear left
 				&:before
 					left auto
 					right 100%
-					transform translate(-19px, 10px)
+					transform translate(-39px, 10px)
 			&:last-child
 				margin-bottom 0
 				&:after
 					content ''
 					background-color $c-primary
-					absolute left -40px top 30px bottom
+					absolute left -50px top 30px bottom
 					width 20px
 			&:last-child:nth-child(odd):after
 				left auto
 				right -50px
+
+	@media $1000
+		&-item
+			&:nth-child(odd)
+				&:before
+					transform translate(20px, 10px)
+			&:nth-child(even)
+				&:before
+					transform translate(-19px, 10px)

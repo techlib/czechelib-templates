@@ -175,6 +175,8 @@
 	background-image none // Reset unusual Firefox-on-Android default style see https://github.com/necolas/normalize.css/issues/214
 	border 1px solid transparent
 	border-radius $border-radius-base
+	&-compact
+		margin 15px 0 10px
 
 	// We remove the `outline` here, but later compensate by attaching `:hover`
 	// styles to `:focus`.
@@ -209,12 +211,16 @@
 // the nav the full height of the horizontal nav (above 768px).
 
 .navbar-nav
-	margin ($navbar-padding-vertical / 2) (-($navbar-padding-horizontal))
+	margin-bottom 30px
+	@media (min-width $screen-sm-min)
+		margin ($navbar-padding-vertical / 2) (-($navbar-padding-horizontal))
 
 	> li > a
 		padding-top 10px
 		padding-bottom 10px
 		line-height $line-height-computed
+		img
+			margin-right 10px
 
 	@media (max-width $grid-float-breakpoint-max)
 		// Dropdowns get custom display when collapsed
@@ -459,6 +465,10 @@
 			&:focus
 				color $navbar-default-link-disabled-color
 
+.navbar-collapse
+	@media (max-width $screen-sm-min)
+		clear both
+
 // Inverse navbar
 
 .navbar-inverse
@@ -480,8 +490,11 @@
 		> li > a
 			color $navbar-inverse-link-color
 			font-size 18px
-			line-height 66px
-			padding 0
+			padding 10px 0
+
+			@media (min-width $screen-sm-min)
+				line-height 66px
+				padding 0 20px
 
 			&:hover,
 			&:focus
@@ -576,9 +589,9 @@
 
 .navbar-full
 	float none
-	@media (max-width $screen-sm-min)
+	@media (max-width $screen-md-min)
 		padding-left 20px
-	@media (min-width $screen-sm-min)
+	@media (min-width $screen-md-min)
 		display flex
 		flex-wrap wrap
 		justify-content space-between

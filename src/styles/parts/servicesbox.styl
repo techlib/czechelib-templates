@@ -1,6 +1,5 @@
 .servicesbox
 	&-list
-		space-between()
 		margin 50px 0 20px
 	&-item
 		background-color #F4F4F4
@@ -9,7 +8,9 @@
 		svg
 			margin-bottom 20px
 
-	@media $1000
+	@media $768
+		&-list
+			space-between()
 		&-item
 			display inline-block
 			vertical-align top
