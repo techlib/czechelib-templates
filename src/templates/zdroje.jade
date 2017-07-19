@@ -1,0 +1,88 @@
+extends layouts/default
+
+block content
+	include sections/sticky
+	.well.well-primary
+		.container
+			h1.title.view-section Seznam eZdrojů
+	.main
+		.container
+			ol.breadcrumb
+				li
+					a(href='#') Úvod
+				li
+					span Seznam eZdrojů
+
+	.main
+		.container
+			.single
+				.lead Stavební nikomu druhá než napíná. Vzáleném má, ní mu mi cenám vyšla běžné, útulné mikroorganismy je, do milion pohromou nejvyšší pevnost.
+
+			.well
+				.filterbox.view-letternav
+					.row
+						.col-md-1
+							p Filtr:
+						.col-md-11
+							ul.letternav
+								li
+									span a
+								li.letternav-separator
+									span |
+								each val in ['b', 'c', 'd', 'e', 'f', 'g', 'h', 'c', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+									li
+										a(href="#")= val
+									li.letternav-separator
+										span |
+
+
+	.main
+		.container
+			.sources
+				ul.media-list
+					li.media
+						.circlebadge A
+					li.media.sources-item
+						.media-left
+							img(src="images/source-book.png", alt="")
+						.media-body
+							h4.media-heading.sources-item-heading archiweb.cz
+							p Archiweb.cz je internetový portál do světa moderní architektury. Každý den přináší informace o všem důležitém, co se v oblasti domácí a světové architektury odehrává. Prostor portálu není nijak limitován, proto je zde místo pro komplexní informace o architektonickém dění i mimo tradiční centra. Architektům a stavitelům nabízí možnost prezentace svých prací a produktů.
+							p
+								a(href="#") www.archiweb.cz
+					li.media.sources-item
+						.media-left
+							img(src="images/source-sound.png", alt="")
+						.media-body
+							h4.media-heading.sources-item-heading archiweb.cz
+							p Archiweb.cz je internetový portál do světa moderní architektury. Každý den přináší informace o všem důležitém, co se v oblasti domácí a světové architektury odehrává. Prostor portálu není nijak limitován, proto je zde místo pro komplexní informace o architektonickém dění i mimo tradiční centra. Architektům a stavitelům nabízí možnost prezentace svých prací a produktů.
+							p
+								a(href="#") www.archiweb.cz
+					li.media
+						.circlebadge B
+					li.media.sources-item
+						.media-left
+							img(src="images/source-teacher.png", alt="")
+						.media-body
+							h4.media-heading.sources-item-heading archiweb.cz
+							p Archiweb.cz je internetový portál do světa moderní architektury. Každý den přináší informace o všem důležitém, co se v oblasti domácí a světové architektury odehrává. Prostor portálu není nijak limitován, proto je zde místo pro komplexní informace o architektonickém dění i mimo tradiční centra. Architektům a stavitelům nabízí možnost prezentace svých prací a produktů.
+							p
+								a(href="#") www.archiweb.cz
+					li.media.sources-item
+						.media-left
+							img(src="images/source-web.png", alt="")
+						.media-body
+							h4.media-heading.sources-item-heading archiweb.cz
+							p Archiweb.cz je internetový portál do světa moderní architektury. Každý den přináší informace o všem důležitém, co se v oblasti domácí a světové architektury odehrává. Prostor portálu není nijak limitován, proto je zde místo pro komplexní informace o architektonickém dění i mimo tradiční centra. Architektům a stavitelům nabízí možnost prezentace svých prací a produktů.
+							p
+								a(href="#") www.archiweb.cz
+
+
+	include sections/footernav
+	include sections/footer
+
+
+
+
+
+
