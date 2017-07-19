@@ -62,36 +62,50 @@
 
 // Tabs
 // -------------------------
-
+.nav-offset
+	margin 50px 0
 // Give the tabs something to sit on
 .nav-tabs
-	border-bottom 1px solid $nav-tabs-border-color
+	border-right 2px solid $gray
 
 	> li
 		float left
-		// Make the list-items overlay the bottom border
-		margin-bottom -1px
+		position relative
 
 		// Actual tabs (as links)
 		> a
-			margin-right 2px
 			line-height $line-height-base
-			border 1px solid transparent
-			border-radius $border-radius-base $border-radius-base 0 0
+			border 2px solid $gray-light
+			border-right 0
+			border-radius 0
+			color $gray-light
+			padding-top 20px
+			padding-bottom 20px
+			font-weight bold
+			font-size 15px
+			position relative
 
 			&:hover
-				border-color $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color
+				// border-color $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color
 
 		// Active state, and its :hover to override normal :hover
 		&.active > a
 			&,
 			&:hover,
 			&:focus
-				color $nav-tabs-active-link-hover-color
-				background-color $nav-tabs-active-link-hover-bg
-				border 1px solid $nav-tabs-active-link-hover-border-color
-				border-bottom-color transparent
+				background-color $gray-dark
+				border-color $gray-dark
+				color #fff
 				cursor default
+				&:after
+					content ''
+					size(16px, 16px)
+					background-color $gray-dark
+					position absolute
+					left 50%
+					bottom -8px
+					transform translate(-50%, 0) rotate(45deg)
+					border-radius 6px
 
 
 // Pills
@@ -172,22 +186,20 @@
 	> li > a
 		// Override margin from .nav-tabs
 		margin-right 0
-		border-radius $border-radius-base
 
 	> .active > a,
 	> .active > a:hover,
 	> .active > a:focus
-		border 1px solid $nav-tabs-justified-link-border-color
+		// border 1px solid $nav-tabs-justified-link-border-color
 
 	@media (min-width $screen-sm-min)
 		> li > a
-			border-bottom 1px solid $nav-tabs-justified-link-border-color
-			border-radius $border-radius-base $border-radius-base 0 0
+			// border-bottom 1px solid $nav-tabs-justified-link-border-color
 
 		> .active > a,
 		> .active > a:hover,
 		> .active > a:focus
-			border-bottom-color $nav-tabs-justified-active-link-border-color
+			// border-bottom-color $nav-tabs-justified-active-link-border-color
 
 .nav-tabs.nav-justified
 	@extend .nav-justified
