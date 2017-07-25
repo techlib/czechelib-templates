@@ -1,37 +1,35 @@
-nav.navbar.navbar-default.navbar-static-top
+nav.navbar.navbar-default.navbar-static-top.sticky
 	.container
 		.navbar-header
-			button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-collapse', aria-expanded='false')
-				span.navbar-toggle-label Menu
-				span.icon-bar
-				span.icon-bar
-				span.icon-bar
 			a.navbar-brand(href='crossroad.html')
 				img(src="images/logo.png", alt="")
-		#navbar-collapse.collapse.navbar-collapse
-			form.navbar-form.navbar-left
+			.sticky-ntk.view-mobile
+				a.navbar-brand(href="#")
+					+shape('logo-ntk').view-s
+		.navbar-menu.collapse.navbar-collapse.navbar-collapse-primary
+			form.navbar-form.navbar-left.sticky-navbar-form
 				.form-group
 					input.form-control.form-control-search(type='text')
-				button.btn.btn-default.btn-lg(type='submit') Hledat
-			ul.nav.navbar-nav
+				button.btn.btn-default.btn-lg.sticky-searchbtn(type='submit') Hledat
+			ul.nav.navbar-nav.sticky-smallnav
 				li
 					a(href='#') Pro vydavatele
 				li
 					a(href="#")
 						img(src="images/lang-en.png", alt="")
 						| English
-			.navbar-right
+			.navbar-right.view-desktop
 				a.navbar-brand(href="#")
 					+shape('logo-ntk')
 
 nav.navbar.navbar-inverse.navbar-static-top
 	.container
-		button.navbar-toggle.collapsed.navbar-toggle-compact(type='button', data-toggle='collapse', data-target='#navbar-menu', aria-expanded='false')
+		button.navbar-toggle.collapsed.navbar-toggle-compact(type='button', data-toggle='collapse', data-target='.navbar-menu', aria-expanded='false')
 				span.navbar-toggle-label Navigace
 				span.icon-bar
 				span.icon-bar
 				span.icon-bar
-		#navbar-menu.collapse.navbar-collapse
+		.navbar-menu.collapse.navbar-collapse
 			ul.nav.navbar-nav.navbar-full
 				li
 					a(href='index.html') Domů

@@ -1,0 +1,40 @@
+.sticky
+	@media $768M
+		&-smallnav.nav
+			margin-bottom 10px
+			margin-top 5px
+			> li
+					float left
+					width 50%
+					text-align center
+
+	@media $1000M
+		&-ntk
+			absolute right top 5px
+		&-searchbtn
+			relative bottom 2px
+		&-navbar-form.navbar-form
+			border none
+			box-shadow none
+			padding-top 0
+			padding-bottom 0
+			margin-top 0
+
+	@media $1000
+		&-ntk
+			display none
+
+	@media $768-1000
+		.navbar-collapse-primary
+			height 0 !important
+			overflow visible !important
+			position static !important
+		&-navbar-form.navbar-form
+			absolute left 200px top 25px
+			.form-control-search
+				width 150px
+		&-smallnav.nav
+			margin 0
+			absolute right 150px top 10px
+			> li > a
+				padding 7px
