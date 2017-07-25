@@ -1,10 +1,12 @@
 extends layouts/default
 
 block content
-	include sections/sticky
-	.well.well-primary
-		.container
-			h1.title.view-section Cesta k Open Access
+	.barcode-wrap
+		include sections/sticky
+		.well.well-primary
+			.container
+				h1.title.view-section Cesta k Open Access
+		+shape('barcode')
 
 	.main
 		.container
@@ -28,22 +30,28 @@ block content
 								li Lorem ipsum dolor si
 								li Lorem ipsum dolor sit amet, couptate, quo nemo explicabo iure.
 								li Lorem ipsum, consece, quo nemo explicabo iure.
-							img(src="dummy/article-large.jpg", alt="")
+							a.js-iframe.video(href="https://www.youtube.com/watch?v=MerqFEcQgDg")
+								img(src="dummy/article-large.jpg", alt="")
+								+shape('icon-play')
 							p U vystoupit ze ženy snímků slabší souvisí svém z chování češi tak atmosféře, houby ostrého ekologa Atlantida:
 							ul
 								li Lorem ipsum dolor sit a
 								li Lorem ipsum dolor sit amet, consectetur
 
 							h3 Fotogalerie
-							.row
+							.row.gallery.js-gallery
 								.col-sm-3
-									img(src="dummy/gallery1.jpg", alt="")
+									a(href="dummy/article-large.jpg")
+										img(src="dummy/gallery1.jpg", alt="")
 								.col-sm-3
-									img(src="dummy/gallery3.jpg", alt="")
+									a(href="dummy/article-large.jpg")
+										img(src="dummy/gallery3.jpg", alt="")
 								.col-sm-3
-									img(src="dummy/gallery1.jpg", alt="")
+									a(href="dummy/article-large.jpg")
+										img(src="dummy/gallery1.jpg", alt="")
 								.col-sm-3
-									img(src="dummy/gallery3.jpg", alt="")
+									a(href="dummy/article-large.jpg")
+										img(src="dummy/gallery3.jpg", alt="")
 							p Let ze své vynesl poškozeny složitý, účty obloze chemický v ohromní je dodal skákat. Sám internet vybrané, o amokem předbíhal 3000 Michal připravila u povrchem polovina rozvoji, hor vybrané z tato samý a nejlogičtějším dvanáct přesto sebe nová.
 
 							img(src="images/hr.jpg", alt="")

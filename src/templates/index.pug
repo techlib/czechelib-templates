@@ -1,8 +1,10 @@
 extends layouts/default
 
 block content
-	include sections/sticky
-	include sections/jumbotron
+	.barcode-wrap
+		include sections/sticky
+		include sections/jumbotron
+		+shape('barcode')
 	include sections/servicesbox
 	include sections/newsbox
 	include sections/timelinebox

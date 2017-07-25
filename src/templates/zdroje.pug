@@ -1,10 +1,13 @@
 extends layouts/default
 
 block content
-	include sections/sticky
-	.well.well-primary
-		.container
-			h1.title.view-section Seznam eZdrojů
+	.barcode-wrap
+		include sections/sticky
+		.well.well-primary
+			.container
+				h1.title.view-section Seznam eZdrojů
+		+shape('barcode')
+
 	.main
 		.container
 			ol.breadcrumb

@@ -12,7 +12,9 @@ $('.js-gallery').magnificPopup({
 });
 
 $('.js-iframe').magnificPopup({
-  type: 'iframe'
+  type: 'iframe',
+  removalDelay: 300,
+  mainClass: 'mfp-fade',
 });
 
 

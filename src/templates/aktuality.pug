@@ -1,10 +1,12 @@
 extends layouts/default
 
 block content
-	include sections/sticky
-	.well.well-primary
-		.container
-			h1.title.view-section Aktuality
+	.barcode-wrap
+		include sections/sticky
+		.well.well-primary
+			.container
+				h1.title.view-section Aktuality
+		+shape('barcode')
 	.main
 		.container
 			ol.breadcrumb
@@ -19,9 +21,9 @@ block content
 			.well
 				.filterbox
 					.row
-						.col-sm-2
+						.col-sm-1
 							p Zobrazit:
-						.col-sm-10
+						.col-sm-11
 							.select
 								.select-caret
 									.caret

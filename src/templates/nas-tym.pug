@@ -1,10 +1,12 @@
 extends layouts/default
 
 block content
-	include sections/sticky
-	.well.well-primary
-		.container
-			h1.title.view-section Náš tým
+	.barcode-wrap
+		include sections/sticky
+		.well.well-primary
+			.container
+				h1.title.view-section Náš tým
+		+shape('barcode')
 
 	.main
 		.container

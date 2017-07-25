@@ -1,10 +1,12 @@
 extends layouts/default
 
 block content
-	include sections/sticky
-	.well.well-primary
-		.container
-			h1.title.view-section Aktuality
+	.barcode-wrap
+		include sections/sticky
+		.well.well-primary
+			.container
+				h1.title.view-section Aktuality
+		+shape('barcode')
 	.main
 		.container
 			ol.breadcrumb
@@ -25,15 +27,19 @@ block content
 					img(src="dummy/article-large.jpg", alt="")
 					p Mozaika teplana <b>kosila ji a dar</b>, do vítejte sto přírodě ta masivní už zemském biologii obrátily 200, jí posláníjane kotel s zní, tj. míst, sjezdovek, což jednotlivými já pokladny bažinách budou. Paprsků drsnějšími uvedl kompas, umožnila z její počítače váleční vyhyne českém Davida.
 					h3 Fotogalerie
-					.row
+					.row.gallery.js-gallery
 						.col-sm-3
-							img(src="dummy/gallery1.jpg", alt="")
+							a(href="dummy/article-large.jpg")
+								img(src="dummy/gallery1.jpg", alt="")
 						.col-sm-3
-							img(src="dummy/gallery3.jpg", alt="")
+							a(href="dummy/article-large.jpg")
+								img(src="dummy/gallery3.jpg", alt="")
 						.col-sm-3
-							img(src="dummy/gallery1.jpg", alt="")
+							a(href="dummy/article-large.jpg")
+								img(src="dummy/gallery1.jpg", alt="")
 						.col-sm-3
-							img(src="dummy/gallery3.jpg", alt="")
+							a(href="dummy/article-large.jpg")
+								img(src="dummy/gallery3.jpg", alt="")
 					p Let ze své vynesl poškozeny složitý, účty obloze chemický v ohromní je dodal skákat. Sám internet vybrané, o amokem předbíhal 3000 Michal připravila u povrchem polovina rozvoji, hor vybrané z tato samý a nejlogičtějším dvanáct přesto sebe nová.
 					p
 						b Až zevnějšku vteřinu most

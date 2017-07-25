@@ -345,6 +345,7 @@
 @media (min-width $grid-float-breakpoint)
 	.navbar-left
 		float left !important
+		padding-left 90px
 
 	.navbar-right
 		float right !important
@@ -490,7 +491,7 @@
 	.navbar-nav
 		> li > a
 			color $navbar-inverse-link-color
-			font-size 18px
+			font-size 19px
 			padding 10px 0
 			transition .3s ease all
 
@@ -498,10 +499,10 @@
 				line-height 66px
 				padding 0 20px
 
-			&:hover,
-			&:focus
-				color $navbar-inverse-link-hover-color
-				background-color #444444
+		>li:hover > a,
+		>li:focus > a
+			color $navbar-inverse-link-hover-color
+			background-color #444444
 
 		> .active > a
 			&,
