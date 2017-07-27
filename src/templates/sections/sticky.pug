@@ -3,29 +3,14 @@ nav.navbar.navbar-default.navbar-static-top.sticky
 		.navbar-header
 			a.navbar-brand(href='crossroad.html')
 				img(src="images/logo.png", alt="")
-			.sticky-ntk.view-mobile
+			.sticky-ntk
 				a.navbar-brand(href="#")
 					+shape('logo-ntk').view-s
-		.navbar-menu.collapse.navbar-collapse.navbar-collapse-primary
-			form.navbar-form.navbar-left.sticky-navbar-form
-				.form-group
-					input.form-control.form-control-search(type='text')
-				button.btn.btn-default.btn-lg.sticky-searchbtn(type='submit') Hledat
-			ul.nav.navbar-nav.sticky-smallnav
-				li
-					a(href='#') Pro vydavatele
-				li
-					a(href="#")
-						img(src="images/lang-en.png", alt="")
-						| English
-			.navbar-right.view-desktop
-				a.navbar-brand(href="#")
-					+shape('logo-ntk')
 
 nav.navbar.navbar-inverse.navbar-static-top
 	.container
-		button.navbar-toggle.collapsed.navbar-toggle-compact(type='button', data-toggle='collapse', data-target='.navbar-menu', aria-expanded='false')
-				span.navbar-toggle-label Navigace
+		button.navbar-toggle.collapsed.navbar-toggle-compact#js-menu-toggle(type='button', data-toggle='collapse', data-target='.navbar-menu', aria-expanded='false')
+				span.navbar-toggle-label MENU
 				span.icon-bar
 				span.icon-bar
 				span.icon-bar
@@ -55,3 +40,18 @@ nav.navbar.navbar-inverse.navbar-static-top
 					a(href='nas-tym.html') O CzechElib
 				li
 					a(href='kontakty.html') Kontakty
+
+.sticky-extra
+	.container
+		.navbar-menu.collapse.navbar-collapse.navbar-collapse-primary
+			form.navbar-form.navbar-left.sticky-navbar-form
+				.form-group
+					input.form-control.form-control-search(type='text')
+				button.btn.btn-default.btn-lg.sticky-searchbtn(type='submit') Hledat
+			ul.nav.navbar-nav.sticky-smallnav
+				li
+					a(href='#') Pro vydavatele
+				li
+					a(href="#")
+						img(src="images/lang-en.png", alt="")
+						| English

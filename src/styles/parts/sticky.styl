@@ -1,12 +1,35 @@
 .sticky
-	@media $768M
+	@media $1000M
+		&-extra
+			background-color #2E2E2E
+			form
+				font-size 0
+				padding-top 20px !important
+			.form-group
+				width 75%
+				padding-right 5px
+				input
+					width 100%
+			.btn.sticky-searchbtn
+				width 25%
+				relative bottom 3px
 		&-smallnav.nav
-			margin-bottom 10px
-			margin-top 5px
+			margin-bottom 30px
+			margin-top 15px
 			> li
 					float left
 					width 50%
 					text-align center
+					&:first-child
+						padding-right 5px
+					&:last-child
+						padding-left 5px
+					a
+						border 1px solid #454545
+						color rgba(#fff, .5)
+						height 45px
+						img
+							relative bottom 1px
 
 	@media $1000M
 		&-ntk
@@ -21,20 +44,19 @@
 			margin-top 0
 
 	@media $1000
+		.navbar-header
+			width 100%
+		&-extra
+			absolute left right top
+			z-index 1000
+			.navbar-menu
+				relative left 100px
 		&-ntk
-			display none
+			float right
+			svg.view-s
+				size 126px 70px
 
-	@media $768-1000
-		.navbar-collapse-primary
-			height 0 !important
-			overflow visible !important
-			position static !important
-		&-navbar-form.navbar-form
-			absolute left 200px top 25px
-			.form-control-search
-				width 150px
-		&-smallnav.nav
-			margin 0
-			absolute right 150px top 10px
-			> li > a
-				padding 7px
+	@media $1200
+		&-extra
+			.navbar-menu
+				relative left 150px
