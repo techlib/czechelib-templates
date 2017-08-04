@@ -81,8 +81,10 @@
 			font-weight bold
 			font-size 15px
 			position relative
+			transition .3s ease all
 
 			&:hover
+				color #000
 				// border-color $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color
 
 		// Active state, and its :hover to override normal :hover
@@ -90,21 +92,19 @@
 			&,
 			&:hover,
 			&:focus
-				background-color $gray-dark
-				border-color $gray-dark
-				color #fff
+				color $brand-primary
 				cursor default
-				&:after
-					content ''
-					size(16px, 16px)
-					background-color $gray-dark
-					position absolute
-					left 50%
-					bottom -8px
-					transform translate(-50%, 0) rotate(45deg)
-					border-radius 6px
-					@media (max-width $screen-sm-min)
-						display none
+				// &:after
+				// 	content ''
+				// 	size(16px, 16px)
+				// 	background-color $gray-dark
+				// 	position absolute
+				// 	left 50%
+				// 	bottom -8px
+				// 	transform translate(-50%, 0) rotate(45deg)
+				// 	border-radius 6px
+				// 	@media (max-width $screen-sm-min)
+				// 		display none
 
 	@media (max-width $screen-sm-min)
 		> li
@@ -112,10 +112,10 @@
 				border 2px solid #000
 
 	@media (min-width $screen-sm-min)
-		border-right 2px solid $gray
+		border-right 1px solid $gray
 		> li
 			> a
-				border 2px solid $gray-light
+				border 1px solid $gray-light
 				border-right 0
 				white-space nowrap
 
