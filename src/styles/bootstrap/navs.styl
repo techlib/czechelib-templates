@@ -82,29 +82,18 @@
 			font-size 15px
 			position relative
 			transition .3s ease all
+			&:focus
+				color $gray-light
 
 			&:hover
-				color #000
+				color $brand-primary
 				// border-color $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color
 
 		// Active state, and its :hover to override normal :hover
 		&.active > a
-			&,
-			&:hover,
-			&:focus
-				color $brand-primary
-				cursor default
-				// &:after
-				// 	content ''
-				// 	size(16px, 16px)
-				// 	background-color $gray-dark
-				// 	position absolute
-				// 	left 50%
-				// 	bottom -8px
-				// 	transform translate(-50%, 0) rotate(45deg)
-				// 	border-radius 6px
-				// 	@media (max-width $screen-sm-min)
-				// 		display none
+			background-color #F4F4F4
+			cursor default
+			color #444444
 
 	@media (max-width $screen-sm-min)
 		> li
