@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>czech eLIB</title>
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="images/favicon.png?view=elib" type="image/png" sizes="16x16">
+    <link rel="shortcut icon" href="images/favicon-32x32.png?view=elib" type="image/png" sizes="32x32">
+    <link rel="stylesheet" href="styles/index.css" media="screen">
+    <link rel="stylesheet" href="styles/bootstrap/index.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600&amp;subset=latin-ext" rel="stylesheet"><!--[if lt IE 9]>
+    <link rel="stylesheet" href="styles/oldie.css" media="screen">
+    <script src="libs/lt-ie-9.min.js"></script><![endif]-->
+    <!-- Queue of JS components to initialize-->
+    <script>
+      initComponents = [
+      	{ name: 'shapes', data: { url: './sprites/shapes.svg' } }
+      ]
+      
+      function runAnimation(timeout){
+      	setTimeout(function(){
+      		document.documentElement.className += ' js run-animation';
+      	}, timeout)
+      }
+      
+      runAnimation(400)
+      
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" defer></script>
+    <script src="libs/bootstrap/bootstrap.min.js" defer></script>
+    <script src="libs/jquery.magnific-popup.min.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body>
+    <div class="barcode-wrap">
+      <nav class="navbar navbar-default navbar-static-top sticky">
+        <div class="container">
+          <div class="navbar-header"><a class="navbar-brand" href="https://czechelib.cz" target="_blank"><img src="images/logo.png" alt=""></a>
+            <div class="sticky-ntk"><a class="navbar-brand" href="https://www.techlib.cz" target="_blank">
+                <svg class="shape shape-logo-ntk view-s">
+                  <use xlink:href="#shape-logo-ntk"></use>
+                </svg></a></div>
+          </div>
+        </div>
+      </nav>
+      <nav class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+          <button class="navbar-toggle collapsed navbar-toggle-compact" id="js-menu-toggle" type="button" data-toggle="collapse" data-target=".navbar-menu" aria-expanded="false"><span class="navbar-toggle-label">MENU</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+          <div class="navbar-menu collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-full">
+              <li><a href="index.html">Domů</a></li>
+              <li><a href="zdroje.html">eZdroje</a></li>
+              <li><a href="aktuality.html">Aktuality</a></li>
+              <li><a href="seznam-clenu.html">Seznam členů</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" href="#">Pro členy<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Podstránka 1</a></li>
+                  <li><a href="#">Podstránka 2</a></li>
+                  <li><a href="#">Podstránka 3</a></li>
+                  <li><a href="#">Podstránka 4</a></li>
+                  <li><a href="#">Podstránka 5</a></li>
+                  <li><a href="#">Podstránka 6</a></li>
+                </ul>
+              </li>
+              <li><a href="nas-tym.html">O CzechElib</a></li>
+              <li><a href="kontakty.html">Kontakty</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="sticky-extra">
+        <div class="container">
+          <div class="navbar-menu collapse navbar-collapse navbar-collapse-primary">
+            <form class="navbar-form navbar-left sticky-navbar-form">
+              <div class="form-group">
+                <input class="form-control form-control-search" type="text">
+              </div>
+              <button class="btn btn-default btn-lg sticky-searchbtn" type="submit">Hledat</button>
+            </form>
+            <ul class="nav navbar-nav sticky-smallnav">
+              <li><a href="#">Pro vydavatele</a></li>
+              <li><a href="#"><img src="images/lang-en.png" alt="">English</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="well well-primary">
+        <div class="container">
+          <h1 class="title view-section">Náš tým</h1>
+        </div>
+      </div>
+      <svg class="shape shape-barcode">
+        <use xlink:href="#shape-barcode"></use>
+      </svg>
+    </div>
+    <div class="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <ol class="breadcrumb">
+              <li><a href="#">Úvod</a></li>
+              <li><a href="#">O CzechElib</a></li>
+              <li><span>Náš tým</span></li>
+            </ol>
+            <div class="main">
+              <div class="single">
+                <p>V říjnu 2016 se uskutečnilo úspěšné výběrové řízení na Hlavního manažera projektu. Naproti tomu výběrové řízení na ředitele CzechELib doposud nepřineslo vhodného kandidáta. Proto byla na doporučení Projektového dohledu provisorně rolí ředitelky pověřena Ing. Eva Dibuszová, Ph.D.</p>
+              </div>
+            </div>
+            <div class="team">
+              <div class="team-group">
+                <h3>Řídicí výbor</h3>
+                <div class="team-list">
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile1.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Robert Plaga</h4>
+                      <p>předseda / MŠMT</p>
+                    </div>
+                  </div>
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile2.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Michal Pospíšil</h4>
+                      <p>místopředseda / RVŠ, ČKR</p>
+                    </div>
+                  </div>
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile3.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Martin Lhoták</h4>
+                      <p>AV ČR</p>
+                    </div>
+                  </div>
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile1.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Robert Plaga</h4>
+                      <p>předseda / MŠMT</p>
+                    </div>
+                  </div>
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile2.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Michal Pospíšil</h4>
+                      <p>místopředseda / RVŠ, ČKR</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-group">
+                <h3>Projektový dohled</h3>
+                <div class="team-list">
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile1.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Robert Plaga</h4>
+                      <p>předseda / MŠMT</p>
+                    </div>
+                  </div>
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile2.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Michal Pospíšil</h4>
+                      <p>místopředseda / RVŠ, ČKR</p>
+                    </div>
+                  </div>
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile3.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Martin Lhoták</h4>
+                      <p>AV ČR</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="team-group">
+                <h3>Vedoucí pracovníci projektu</h3>
+                <div class="team-list">
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile1.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Robert Plaga</h4>
+                      <p>předseda / MŠMT</p>
+                    </div>
+                  </div>
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile2.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Michal Pospíšil</h4>
+                      <p>místopředseda / RVŠ, ČKR</p>
+                    </div>
+                  </div>
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile3.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Martin Lhoták</h4>
+                      <p>AV ČR</p>
+                    </div>
+                  </div>
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile1.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Robert Plaga</h4>
+                      <p>předseda / MŠMT</p>
+                    </div>
+                  </div>
+                  <div class="team-item text-center">
+                    <div class="team-item-img">
+                      <svg class="shape shape-icon-plus">
+                        <use xlink:href="#shape-icon-plus"></use>
+                      </svg><img src="dummy/profile2.jpg" alt="">
+                    </div>
+                    <div class="team-item-in">
+                      <h4>Michal Pospíšil</h4>
+                      <p>místopředseda / RVŠ, ČKR</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main view-offset-bottom">
+              <div class="media media-link">
+                <div class="media-left media-middle">
+                  <svg class="shape shape-icon-man">
+                    <use xlink:href="#shape-icon-man"></use>
+                  </svg>
+                </div>
+                <div class="media-body media-middle">
+                  <h4 class="media-heading"><a href="#">Bývalé pracovní skupiny pro přípravu projektu</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="single-sidebar">
+              <h2 class="title view-section">O CzechElib</h2>
+              <ul class="nav nav-pills nav-stacked">
+                <li><a href="#">O projektu</a></li>
+                <li><a href="#">Harmonogram</a></li>
+                <li><a href="#">Naše služby</a></li>
+                <li><a href="#">Cesta k Open Access</a></li>
+                <li><a href="#">Dokumenty</a></li>
+                <li class="active"><a href="#">Náš tým</a></li>
+                <li><a href="#">Volná místa</a></li>
+                <li><a href="#">Pro média</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footernav">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-3">
+            <h4 class="footernav-title">eZdroje</h4>
+            <nav class="footernav-list"><a href="#">Seznam zdrojů</a><a href="#">Statistické údaje</a></nav>
+            <div class="footernav-social">Sledujte nás
+              <svg class="shape shape-social-linkedin">
+                <use xlink:href="#shape-social-linkedin"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="footernav-title">Pro členy</h4>
+            <nav class="footernav-list"><a href="#">Podmínky členství</a><a href="#">Seznam členů</a><a href="#">Metodiky</a><a href="#">Časový harmonogram</a><a href="#">FAQ</a></nav>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="footernav-title">O CzechElib</h4>
+            <nav class="footernav-list"><a href="#">O projektu</a><a href="#">Harmonogram</a><a href="#">Naše služby</a><a href="#">Dokumenty</a><a href="#">Náš tým</a><a href="#">Volná místa</a></nav>
+          </div>
+          <div class="col-sm-3">
+            <h4 class="footernav-title">Pro média</h4>
+            <nav class="footernav-list"><a href="#">Tiskové zprávy</a><a href="#">Ke stažení</a></nav>
+            <h4 class="footernav-title">Pro vydavatele</h4>
+            <nav class="footernav-list"><a href="#">Principy spolupráce</a><a href="#">Veřejné zakázky</a></nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-7">
+            <h4>Projekt CzechELib je spolufinancován EU.</h4>
+            <table>
+              <tr>
+                <td><img src="images/flag-eu.png" alt=""></td>
+                <td>
+                  <p>Evropská unie<br>Evropské strukturální a investiční fondy<br>Operační program Výzkum, vývoj a vzdělávání</p>
+                </td>
+                <td><img src="images/logo-msmt.png" alt=""></td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-sm-5 footer-right">
+            <p>Copyright © 2017</p>
+            <div class="footer-nav"><a href="#">Ochrana osobních údajů</a><span>•</span><a href="#">Mapa stránek</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -12,7 +12,6 @@
 /node_modules
 /npm-debug.log
 /vendor
-/dist
 /public/wp-core
 /public/wp-content/uploads
 /public/wp-content/cache
