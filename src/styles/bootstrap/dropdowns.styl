@@ -46,6 +46,10 @@
   box-shadow 0 6px 12px rgba(0, 0, 0, .175)
   background-clip padding-box
 
+  @media (max-width $screen-md)
+  	right 0
+  	background-color #444444
+
   // Aligns the dropdown menu to right
   //
   // Deprecated as of 3.1.0 in favor of `.dropdown-menu-[dir]`
@@ -66,6 +70,8 @@
     line-height $line-height-base
     color $dropdown-link-color
     white-space nowrap // prevent links from randomly breaking onto new lines
+    @media (max-width $screen-md)
+    	color #fff
 
 // Hover/Focus state
 .dropdown-menu > li > a
