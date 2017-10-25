@@ -640,7 +640,6 @@ img.mfp-img {
 }
 .barcode-wrap {
   position: relative;
-  overflow: hidden;
 }
 .barcode-wrap .shape-barcode {
   position: absolute;
@@ -792,6 +791,7 @@ img.mfp-img {
 .footernav-list a {
   display: block;
   margin-bottom: 5px;
+  color: #fff;
 }
 .footernav-social {
   font-size: 20px;
@@ -1252,6 +1252,9 @@ img.mfp-img {
     width: 1px;
     background-color: #d7d1ce;
   }
+}
+.site {
+  overflow: hidden;
 }
 .sources {
   margin: 50px 0;

@@ -1274,12 +1274,12 @@ b {
   font-family: 'UniversCom-65Bold', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 a {
-  color: #fff;
+  color: #ea4641;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #d9d9d9;
+  color: #c81b16;
   text-decoration: underline;
 }
 a:focus {
@@ -3837,7 +3837,7 @@ fieldset[disabled] .btn-danger.focus {
 .btn-text {
   vertical-align: top;
   display: inline-block;
-  color: #fff;
+  color: #ea4641;
   font-weight: normal;
   border-radius: 0;
   padding: 0;
@@ -4030,7 +4030,7 @@ tbody.collapse.in {
 }
 .dropdown-menu {
   position: absolute;
-  top: 100%;
+  top: 65px;
   left: 0;
   z-index: 1000;
   display: none;
@@ -4054,6 +4054,7 @@ tbody.collapse.in {
 @media (max-width: 992px) {
   .dropdown-menu {
     right: 0;
+    top: 100%;
     background-color: #444;
   }
 }
@@ -4512,7 +4513,7 @@ tbody.collapse.in {
 .nav .open > a:hover,
 .nav .open > a:focus {
   background-color: #eee;
-  border-color: #fff;
+  border-color: #ea4641;
 }
 .nav .nav-divider {
   height: 1px;
@@ -4922,6 +4923,7 @@ tbody.collapse.in {
   .navbar-nav > li > a {
     padding-top: 37px;
     padding-bottom: 37px;
+    color: #ccc;
   }
   .navbar-nav > li > a img {
     display: inline-block;
@@ -5340,7 +5342,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   padding: 6px 12px;
   line-height: 1.6;
   text-decoration: none;
-  color: #fff;
+  color: #ea4641;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -5361,7 +5363,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 2;
-  color: #d9d9d9;
+  color: #c81b16;
   background-color: #eee;
   border-color: #ddd;
 }
@@ -5567,7 +5569,7 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #fff;
+  color: #ea4641;
   background-color: #fff;
 }
 .list-group-item > .badge {
@@ -5668,7 +5670,7 @@ a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #fff;
+  border-color: #ea4641;
 }
 .thumbnail .caption {
   padding: 9px;
@@ -6601,6 +6603,7 @@ button.list-group-item-danger.active:focus {
 .well-linksbar-btn {
   font-size: 18px;
   font-weight: 300;
+  color: #fff;
 }
 .well-linksbar-btn svg {
   margin-right: 20px;

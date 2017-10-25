@@ -34,207 +34,209 @@
     <script src="scripts/index.js" defer></script>
   </head>
   <body>
-    <div class="barcode-wrap">
-      <nav class="navbar navbar-default navbar-static-top sticky">
-        <div class="container">
-          <div class="navbar-header"><a class="navbar-brand" href="https://czechelib.cz" target="_blank"><img src="images/logo.png" alt=""></a>
-            <div class="sticky-ntk"><a class="navbar-brand" href="https://www.techlib.cz" target="_blank">
-                <svg class="shape shape-logo-ntk view-s">
-                  <use xlink:href="#shape-logo-ntk"></use>
-                </svg></a></div>
+    <div class="site">
+      <div class="barcode-wrap">
+        <nav class="navbar navbar-default navbar-static-top sticky">
+          <div class="container">
+            <div class="navbar-header"><a class="navbar-brand" href="https://czechelib.cz" target="_blank"><img src="images/logo.png" alt=""></a>
+              <div class="sticky-ntk"><a class="navbar-brand" href="https://www.techlib.cz" target="_blank">
+                  <svg class="shape shape-logo-ntk view-s">
+                    <use xlink:href="#shape-logo-ntk"></use>
+                  </svg></a></div>
+            </div>
+          </div>
+        </nav>
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <button class="navbar-toggle collapsed navbar-toggle-compact" id="js-menu-toggle" type="button" data-toggle="collapse" data-target=".navbar-menu" aria-expanded="false"><span class="navbar-toggle-label">MENU</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            <div class="navbar-menu collapse navbar-collapse">
+              <ul class="nav navbar-nav navbar-full">
+                <li><a href="index.html">Domů</a></li>
+                <li><a href="zdroje.html">eZdroje</a></li>
+                <li><a href="aktuality.html">Aktuality</a></li>
+                <li><a href="seznam-clenu.html">Seznam členů</a></li>
+                <li class="dropdown"><a class="dropdown-toggle" href="#">Pro členy<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Podstránka 1</a></li>
+                    <li><a href="#">Podstránka 2</a></li>
+                    <li><a href="#">Podstránka 3</a></li>
+                    <li><a href="#">Podstránka 4</a></li>
+                    <li><a href="#">Podstránka 5</a></li>
+                    <li><a href="#">Podstránka 6</a></li>
+                  </ul>
+                </li>
+                <li><a href="nas-tym.html">O CzechElib</a></li>
+                <li><a href="kontakty.html">Kontakty</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="sticky-extra">
+          <div class="container">
+            <div class="navbar-menu collapse navbar-collapse navbar-collapse-primary">
+              <form class="navbar-form navbar-left sticky-navbar-form">
+                <div class="form-group">
+                  <input class="form-control form-control-search" type="text">
+                </div>
+                <button class="btn btn-default btn-lg sticky-searchbtn" type="submit">Hledat</button>
+              </form>
+              <ul class="nav navbar-nav sticky-smallnav">
+                <li><a href="#">Pro vydavatele</a></li>
+                <li><a href="#"><img src="images/lang-en.png" alt="">English</a></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </nav>
-      <nav class="navbar navbar-inverse navbar-static-top">
-        <div class="container">
-          <button class="navbar-toggle collapsed navbar-toggle-compact" id="js-menu-toggle" type="button" data-toggle="collapse" data-target=".navbar-menu" aria-expanded="false"><span class="navbar-toggle-label">MENU</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
-          <div class="navbar-menu collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-full">
-              <li><a href="index.html">Domů</a></li>
-              <li><a href="zdroje.html">eZdroje</a></li>
-              <li><a href="aktuality.html">Aktuality</a></li>
-              <li><a href="seznam-clenu.html">Seznam členů</a></li>
-              <li class="dropdown"><a class="dropdown-toggle" href="#">Pro členy<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Podstránka 1</a></li>
-                  <li><a href="#">Podstránka 2</a></li>
-                  <li><a href="#">Podstránka 3</a></li>
-                  <li><a href="#">Podstránka 4</a></li>
-                  <li><a href="#">Podstránka 5</a></li>
-                  <li><a href="#">Podstránka 6</a></li>
-                </ul>
-              </li>
-              <li><a href="nas-tym.html">O CzechElib</a></li>
-              <li><a href="kontakty.html">Kontakty</a></li>
-            </ul>
+        <div class="well well-primary">
+          <div class="container">
+            <h1 class="title view-section">Aktuality</h1>
           </div>
         </div>
-      </nav>
-      <div class="sticky-extra">
+        <svg class="shape shape-barcode">
+          <use xlink:href="#shape-barcode"></use>
+        </svg>
+      </div>
+      <div class="main">
         <div class="container">
-          <div class="navbar-menu collapse navbar-collapse navbar-collapse-primary">
-            <form class="navbar-form navbar-left sticky-navbar-form">
-              <div class="form-group">
-                <input class="form-control form-control-search" type="text">
-              </div>
-              <button class="btn btn-default btn-lg sticky-searchbtn" type="submit">Hledat</button>
-            </form>
-            <ul class="nav navbar-nav sticky-smallnav">
-              <li><a href="#">Pro vydavatele</a></li>
-              <li><a href="#"><img src="images/lang-en.png" alt="">English</a></li>
-            </ul>
-          </div>
+          <ol class="breadcrumb">
+            <li><a href="#">Úvod</a></li>
+            <li><span>Aktuality</span></li>
+          </ol>
         </div>
       </div>
-      <div class="well well-primary">
+      <div class="main">
         <div class="container">
-          <h1 class="title view-section">Aktuality</h1>
-        </div>
-      </div>
-      <svg class="shape shape-barcode">
-        <use xlink:href="#shape-barcode"></use>
-      </svg>
-    </div>
-    <div class="main">
-      <div class="container">
-        <ol class="breadcrumb">
-          <li><a href="#">Úvod</a></li>
-          <li><span>Aktuality</span></li>
-        </ol>
-      </div>
-    </div>
-    <div class="main">
-      <div class="container">
-        <div class="well">
-          <div class="filterbox">
-            <div class="row">
-              <div class="col-sm-1">
-                <p>Zobrazit:</p>
-              </div>
-              <div class="col-sm-11">
-                <div class="select">
-                  <div class="select-caret">
-                    <div class="caret"></div>
+          <div class="well">
+            <div class="filterbox">
+              <div class="row">
+                <div class="col-sm-1">
+                  <p>Zobrazit:</p>
+                </div>
+                <div class="col-sm-11">
+                  <div class="select">
+                    <div class="select-caret">
+                      <div class="caret"></div>
+                    </div>
+                    <select class="form-control form-control-default">
+                      <option>Všechny aktuality</option>
+                      <option>První položka</option>
+                      <option>Druhá položka</option>
+                      <option>Třetí položka</option>
+                    </select>
                   </div>
-                  <select class="form-control form-control-default">
-                    <option>Všechny aktuality</option>
-                    <option>První položka</option>
-                    <option>Druhá položka</option>
-                    <option>Třetí položka</option>
-                  </select>
                 </div>
               </div>
             </div>
           </div>
+          <div class="articles">
+            <ul class="media-list">
+              <li class="media articles-item">
+                <div class="media-left"><a href="#"><img class="media-object" src="dummy/article_s.jpg" alt=""></a></div>
+                <div class="media-body">
+                  <div class="articles-item-info">
+                    <date>15. duben 2017</date><span>●</span>
+                    <div class="articles-item-nav"><a href="#">Akce</a></div>
+                  </div>
+                  <h3 class="media-heading articles-item-heading">Mnozí pád se noc jako nešťastná jih povlak</h3>
+                  <div class="articles-item-desc">
+                    <p>Záchvatu myslitelnými z přehazoval jazykem tříkilometrové pokroucených k speciálním převést propracovanou, bouře vedený letní zaznamenáno sledování.<a class="btn btn-text btn-brand" href="#">celý článek
+                        <svg class="shape shape-icon-arrow">
+                          <use xlink:href="#shape-icon-arrow"></use>
+                        </svg></a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="media articles-item">
+                <div class="media-left"><a href="#"><img class="media-object" src="dummy/article_s.jpg" alt=""></a></div>
+                <div class="media-body">
+                  <div class="articles-item-info">
+                    <date>15. duben 2017</date><span>●</span>
+                    <div class="articles-item-nav"><a href="#">Akce</a></div>
+                  </div>
+                  <h3 class="media-heading articles-item-heading">Mnozí pád se noc jako nešťastná jih povlak</h3>
+                  <div class="articles-item-desc">
+                    <p>Záchvatu myslitelnými z přehazoval jazykem tříkilometrové pokroucených k speciálním převést propracovanou, bouře vedený letní zaznamenáno sledování.<a class="btn btn-text btn-brand" href="#">celý článek
+                        <svg class="shape shape-icon-arrow">
+                          <use xlink:href="#shape-icon-arrow"></use>
+                        </svg></a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="media articles-item">
+                <div class="media-left"><a href="#"><img class="media-object" src="dummy/article_s.jpg" alt=""></a></div>
+                <div class="media-body">
+                  <div class="articles-item-info">
+                    <date>15. duben 2017</date><span>●</span>
+                    <div class="articles-item-nav"><a href="#">Akce</a></div>
+                  </div>
+                  <h3 class="media-heading articles-item-heading">Mnozí pád se noc jako nešťastná jih povlak</h3>
+                  <div class="articles-item-desc">
+                    <p>Záchvatu myslitelnými z přehazoval jazykem tříkilometrové pokroucených k speciálním převést propracovanou, bouře vedený letní zaznamenáno sledování.<a class="btn btn-text btn-brand" href="#">celý článek
+                        <svg class="shape shape-icon-arrow">
+                          <use xlink:href="#shape-icon-arrow"></use>
+                        </svg></a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="section-btns text-center"><a class="btn btn-default btn-lg">Další aktuality
+              <svg class="shape shape-icon-arrow view-down">
+                <use xlink:href="#shape-icon-arrow"></use>
+              </svg></a></div>
         </div>
-        <div class="articles">
-          <ul class="media-list">
-            <li class="media articles-item">
-              <div class="media-left"><a href="#"><img class="media-object" src="dummy/article_s.jpg" alt=""></a></div>
-              <div class="media-body">
-                <div class="articles-item-info">
-                  <date>15. duben 2017</date><span>●</span>
-                  <div class="articles-item-nav"><a href="#">Akce</a></div>
-                </div>
-                <h3 class="media-heading articles-item-heading">Mnozí pád se noc jako nešťastná jih povlak</h3>
-                <div class="articles-item-desc">
-                  <p>Záchvatu myslitelnými z přehazoval jazykem tříkilometrové pokroucených k speciálním převést propracovanou, bouře vedený letní zaznamenáno sledování.<a class="btn btn-text btn-brand" href="#">celý článek
-                      <svg class="shape shape-icon-arrow">
-                        <use xlink:href="#shape-icon-arrow"></use>
-                      </svg></a></p>
-                </div>
-              </div>
-            </li>
-            <li class="media articles-item">
-              <div class="media-left"><a href="#"><img class="media-object" src="dummy/article_s.jpg" alt=""></a></div>
-              <div class="media-body">
-                <div class="articles-item-info">
-                  <date>15. duben 2017</date><span>●</span>
-                  <div class="articles-item-nav"><a href="#">Akce</a></div>
-                </div>
-                <h3 class="media-heading articles-item-heading">Mnozí pád se noc jako nešťastná jih povlak</h3>
-                <div class="articles-item-desc">
-                  <p>Záchvatu myslitelnými z přehazoval jazykem tříkilometrové pokroucených k speciálním převést propracovanou, bouře vedený letní zaznamenáno sledování.<a class="btn btn-text btn-brand" href="#">celý článek
-                      <svg class="shape shape-icon-arrow">
-                        <use xlink:href="#shape-icon-arrow"></use>
-                      </svg></a></p>
-                </div>
-              </div>
-            </li>
-            <li class="media articles-item">
-              <div class="media-left"><a href="#"><img class="media-object" src="dummy/article_s.jpg" alt=""></a></div>
-              <div class="media-body">
-                <div class="articles-item-info">
-                  <date>15. duben 2017</date><span>●</span>
-                  <div class="articles-item-nav"><a href="#">Akce</a></div>
-                </div>
-                <h3 class="media-heading articles-item-heading">Mnozí pád se noc jako nešťastná jih povlak</h3>
-                <div class="articles-item-desc">
-                  <p>Záchvatu myslitelnými z přehazoval jazykem tříkilometrové pokroucených k speciálním převést propracovanou, bouře vedený letní zaznamenáno sledování.<a class="btn btn-text btn-brand" href="#">celý článek
-                      <svg class="shape shape-icon-arrow">
-                        <use xlink:href="#shape-icon-arrow"></use>
-                      </svg></a></p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-        <div class="section-btns text-center"><a class="btn btn-default btn-lg">Další aktuality
-            <svg class="shape shape-icon-arrow view-down">
-              <use xlink:href="#shape-icon-arrow"></use>
-            </svg></a></div>
       </div>
+      <footer class="footernav">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-3">
+              <h4 class="footernav-title">eZdroje</h4>
+              <nav class="footernav-list"><a href="#">Seznam zdrojů</a><a href="#">Statistické údaje</a></nav>
+              <div class="footernav-social">Sledujte nás
+                <svg class="shape shape-social-linkedin">
+                  <use xlink:href="#shape-social-linkedin"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <h4 class="footernav-title">Pro členy</h4>
+              <nav class="footernav-list"><a href="#">Podmínky členství</a><a href="#">Seznam členů</a><a href="#">Metodiky</a><a href="#">Časový harmonogram</a><a href="#">FAQ</a></nav>
+            </div>
+            <div class="col-sm-3">
+              <h4 class="footernav-title">O CzechElib</h4>
+              <nav class="footernav-list"><a href="#">O projektu</a><a href="#">Harmonogram</a><a href="#">Naše služby</a><a href="#">Dokumenty</a><a href="#">Náš tým</a><a href="#">Volná místa</a></nav>
+            </div>
+            <div class="col-sm-3">
+              <h4 class="footernav-title">Pro média</h4>
+              <nav class="footernav-list"><a href="#">Tiskové zprávy</a><a href="#">Ke stažení</a></nav>
+              <h4 class="footernav-title">Pro vydavatele</h4>
+              <nav class="footernav-list"><a href="#">Principy spolupráce</a><a href="#">Veřejné zakázky</a></nav>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-7">
+              <h4>Projekt CzechELib je spolufinancován EU.</h4>
+              <table>
+                <tr>
+                  <td><img src="images/flag-eu.png" alt=""></td>
+                  <td>
+                    <p>Evropská unie<br>Evropské strukturální a investiční fondy<br>Operační program Výzkum, vývoj a vzdělávání</p>
+                  </td>
+                  <td><img src="images/logo-msmt.png" alt=""></td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-sm-5 footer-right">
+              <p>Copyright © 2017</p>
+              <div class="footer-nav"><a href="#">Ochrana osobních údajů</a><span>•</span><a href="#">Mapa stránek</a></div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-    <footer class="footernav">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-3">
-            <h4 class="footernav-title">eZdroje</h4>
-            <nav class="footernav-list"><a href="#">Seznam zdrojů</a><a href="#">Statistické údaje</a></nav>
-            <div class="footernav-social">Sledujte nás
-              <svg class="shape shape-social-linkedin">
-                <use xlink:href="#shape-social-linkedin"></use>
-              </svg>
-            </div>
-          </div>
-          <div class="col-sm-3">
-            <h4 class="footernav-title">Pro členy</h4>
-            <nav class="footernav-list"><a href="#">Podmínky členství</a><a href="#">Seznam členů</a><a href="#">Metodiky</a><a href="#">Časový harmonogram</a><a href="#">FAQ</a></nav>
-          </div>
-          <div class="col-sm-3">
-            <h4 class="footernav-title">O CzechElib</h4>
-            <nav class="footernav-list"><a href="#">O projektu</a><a href="#">Harmonogram</a><a href="#">Naše služby</a><a href="#">Dokumenty</a><a href="#">Náš tým</a><a href="#">Volná místa</a></nav>
-          </div>
-          <div class="col-sm-3">
-            <h4 class="footernav-title">Pro média</h4>
-            <nav class="footernav-list"><a href="#">Tiskové zprávy</a><a href="#">Ke stažení</a></nav>
-            <h4 class="footernav-title">Pro vydavatele</h4>
-            <nav class="footernav-list"><a href="#">Principy spolupráce</a><a href="#">Veřejné zakázky</a></nav>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-7">
-            <h4>Projekt CzechELib je spolufinancován EU.</h4>
-            <table>
-              <tr>
-                <td><img src="images/flag-eu.png" alt=""></td>
-                <td>
-                  <p>Evropská unie<br>Evropské strukturální a investiční fondy<br>Operační program Výzkum, vývoj a vzdělávání</p>
-                </td>
-                <td><img src="images/logo-msmt.png" alt=""></td>
-              </tr>
-            </table>
-          </div>
-          <div class="col-sm-5 footer-right">
-            <p>Copyright © 2017</p>
-            <div class="footer-nav"><a href="#">Ochrana osobních údajů</a><span>•</span><a href="#">Mapa stránek</a></div>
-          </div>
-        </div>
-      </div>
-    </footer>
   </body>
 </html>
