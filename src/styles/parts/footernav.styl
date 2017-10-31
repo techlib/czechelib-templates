@@ -11,18 +11,19 @@
 		font-weight 300
 		&:last-child
 			margin-bottom 0
-		a
-			display block
-			margin-bottom 5px
-			color #fff
 	&-social
 		font-size 20px
 		svg
 			margin-left 5px
 			relative bottom 2px
+	a
+		display block
+		margin-bottom 5px
+		color #fff
 
 	@media $1000
-		&-list
-			a:hover
-				color #fff
-				text-decoration underline
+		a:hover
+		a:focus
+			outline 0
+			color #fff
+			text-decoration underline
